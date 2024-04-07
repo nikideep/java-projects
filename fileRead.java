@@ -20,14 +20,15 @@ public class fileRead
 	 */
     public String getFileData(final String path) 
     {
+        //assign inputStream to null always.
         FileInputStream inputStream = null;
         try 
         {
             inputStream = new FileInputStream(path);
-            int content;
-            while ((content = inputStream.read()) != -1) 
+            int Content;
+            while ((Content = inputStream.read()) != -1) 
             {
-                builder.append((char) content);
+                builder.append((char)Content);
 
             }
         }
